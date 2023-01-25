@@ -1,4 +1,4 @@
-# Create a function called optimise model which takes 4 argument: train_X_s, train_y_s, test_X_s, test_y_s. The training and testing data sets
+# Creates a function called optimise model which takes 4 argument: train_X_s, train_y_s, test_X_s, test_y_s. The training and testing data sets
 def optimise_model(train_X_s, train_y_s, test_X_s, test_y_s): 
     import numpy as np                                                    # for working with arrays and DataFrames
     import pandas as pd                                                   # for storing our DataFrames
@@ -10,10 +10,10 @@ def optimise_model(train_X_s, train_y_s, test_X_s, test_y_s):
 
     results = pd.DataFrame([])  # an empty DataFrame we can fill as we go through the loop below
     
-    for i in range(1,51):      #for loop which will run the GridSearch with different number of PCA components and neighbour
+    for i in range(1,51):      # for loop which will run the GridSearch with different number of PCA components and neighbour
         model = GridSearchCV(
             make_pipeline(
-                StandardScaler(),   #rescale inorder to take into account the different scales of the different x values
+                StandardScaler(),   #rescale inorder to take into account the different scales of the different x values, helps to plot the model better
                 PCA(),
                 KNeighborsClassifier(n_neighbors=i) # loop through differing number of neighbour
             ),
