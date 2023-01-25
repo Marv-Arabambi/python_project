@@ -34,10 +34,5 @@ Run through the script in the notbook using the markdown cells and annotations a
 
 ## Reference
 data set was sourced from:
-@misc{Dua:2019 ,
-author = "Dua, Dheeru and Graff, Casey",
-year = "2017",
-title = "{UCI} Machine Learning Repository",
-url = "http://archive.ics.uci.edu/ml",
-institution = "University of California, Irvine, School of Information and Computer Sciences" }
+_Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science_
 
